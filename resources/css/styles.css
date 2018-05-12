@@ -1,3 +1,185 @@
-h1  {
-  color: blue;
+body {
+  margin: 0 0;
+  text-align: center;
+  border-left: 1px
+}
+
+.navtop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  size: 32px;
+  padding-left: 24px;
+}
+
+.navlist {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.navlist span {
+  display: inline-block;
+  padding-right: 16px;
+}
+
+.black {
+  color: black;
+}
+
+.grey {
+  color: grey;
+}
+
+.banner1 {
+  background-color: lightgrey;
+  width: 1050px;
+  margin:auto;
+}
+
+.banner1content {
+  padding: 32px 24px;
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+}
+
+.banner1image {
+  padding-right: 24px;
+  width: 60%;
+}
+
+.banner1image img {
+  width: 100%;
+}
+
+.textbox1 {
+  width: 40%;
+}
+
+.tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner2 {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1050px;
+  margin: auto;
+}
+
+.left {
+  width: 60%;
+  padding: 32px 24px;
+}
+
+.left img {
+  width: 100%;
+}
+
+.left h2 {
+  padding: 32px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0px 32px 0px;
+  border-left: 1px solid lightgrey;
+  width: 37.5%;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.right1 .try {
+  width: 35%;
+  padding: 16px;
+}
+
+.right1text {
+  width:100%;
+  text-align: left;
+}
+
+.right2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+.right2 .try2 {
+  width: 35%;
+  padding: 16px;
+}
+
+.right2text {
+  width:100%;
+}
+
+.right3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: lightgrey;
+  border-top: 1px solid lightgrey;
+  border-bottom: 1px solid lightgrey;
+}
+
+.right3 .try3 {
+  width: 35%;
+  padding: 16px;
+}
+
+.right3text {
+  width:100%;
+}
+
+.banner3 {
+  background-color: lightgrey;
+  width: 1050px;
+  margin: auto;
+}
+
+.sixboxes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 72px;
+  padding-right: 72px;
+  justify-content: space-between;
+
+}
+
+.offer1 {
+  width: 25%;
+}
+
+.offer1image img {
+  width:100%
 }
