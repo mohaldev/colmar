@@ -7,6 +7,22 @@ body {
   background-color: white;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
 .navtop {
   display: flex;
   justify-content: space-between;
@@ -33,6 +49,10 @@ body {
   flex-grow: 1;
 }
 
+.navlistmob {
+  display:none;
+}
+
 .navlist span {
   display: inline-block;
   padding-right: 16px;
@@ -50,31 +70,29 @@ body {
 
 .banner1 {
   background-color: lightgrey;
-  align-items: center;
+  margin: 0 auto;
 }
 
 .banner1content {
   padding: 32px 24px;
   display: flex;
   justify-content: space-between;
-  width: 1050px;
+  max-width: 1050px;
   align-items: center;
   margin:auto;
 }
 
 .banner1image {
-  padding-right:0;
   width: 60%;
-  display: block;
 }
 
 .banner1image img {
   width: 100%;
-
 }
 
 .textbox1 {
   width: 40%;
+  text-align: center;
 }
 
 .tagline {
@@ -83,6 +101,7 @@ body {
   justify-content: space-between;
   text-align: left;
   padding-left: 24px;
+  padding-right: 24px;
   font-size: 1.4rem;
 }
 
@@ -97,7 +116,6 @@ body {
   padding: 16px;
   text-decoration: none;
   margin-top: 40px;
-
 }
 
 .banner2 {
@@ -144,9 +162,64 @@ body {
   padding: 16px;
 }
 
+.trym {
+  display: none;
+}
+
+.try2m {
+  display: none;
+}
+
+.try3m {
+  display: none;
+}
+
 .right1text {
   width:100%;
   text-align: left;
+}
+
+.right1text a {
+  text-decoration: none;
+  color: blue;
+}
+
+.right2text a {
+  text-decoration: none;
+  color: blue;
+}
+
+.right3text a {
+  text-decoration: none;
+  color: blue;
+}
+
+.right1text a:hover {
+text-decoration: underline;
+  color: lightblue;
+}
+
+.right2text a:hover {
+text-decoration: underline;
+  color: lightblue;
+}
+
+.right3text a:hover {
+text-decoration: underline;
+  color: lightblue;
+}
+
+.right h6 {
+  margin: 0;
+  padding: 5px;
+  padding-left: 0px;
+}
+
+.right h4 {
+  margin: 0;
+  padding: 5px;
+  padding-left: 0px;
+  color: grey;
 }
 
 .right2 {
@@ -210,6 +283,10 @@ body {
   justify-content: space-between;
 }
 
+.sixlist {
+  display:none;
+}
+
 .offer1 {
   padding-right: 16px;
   padding-bottom: 24px;
@@ -245,6 +322,7 @@ body {
 .left4 {
   width: 60%;
   padding: 32px 24px;
+  padding-left: 0px;
 }
 
 .left4 video {
@@ -297,7 +375,7 @@ body {
 }
 
 footer {
-  width: 1050px;
+  max-width: 1050px;
   margin: auto;
 }
 
@@ -308,10 +386,169 @@ footer {
   align-items: center;
 }
 
-.containerfooter p {
-  padding-left: 24px;
-}
-
 .containerfooter a {
   padding-left: 30px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width : 480px) {
+
+ .navlistmob {
+   display: flex;
+   align-items: center;
+   padding-right: 24px;
+   padding-left: 24px;
+   justify-content: space-between;
+   flex-grow: 1;
+ }
+
+ .logo {
+   display: none;
+ }
+
+ .navlist {
+   display: none;
+ }
+
+.banner1content {
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 24px;
+}
+
+.banner1image,  .textbox1 {
+   width: 100%;
+ }
+
+ .tagline a {
+   width: 90%;
+   text-align: center;
+ }
+
+ .tagline a:hover {
+   background-color: grey;
+ }
+
+ .left {
+   display: none;
+ }
+
+ .right {
+   width: 100%;
+   padding: 16px;
+ }
+
+ .right1 {
+   flex-direction: column;
+   padding-bottom: 16px;
+ }
+
+ .right2 {
+   flex-direction: column;
+   padding-bottom: 16px;
+ }
+
+ .right3 {
+   flex-direction: column;
+   padding-bottom: 16px;
+ }
+
+ .try {
+   display: none;
+ }
+
+ .trym {
+   display: flex;
+   width: 100%;
+ }
+
+ .try2 {
+   display: none;
+ }
+
+ .try2m {
+   display: flex;
+   width: 100%;
+ }
+
+ .try3 {
+   display: none;
+ }
+
+ .try3m {
+   display: flex;
+   width: 100%;
+ }
+
+ .right3 {
+   background-color: white;
+ }
+
+ .sixboxes {
+   display: none;
+ }
+
+ .banner3 {
+   background-color: white;
+   padding-bottom: 25px;
+ }
+
+ .container {
+   width: 100%;
+   padding: 0 16px;
+ }
+
+ .sixlist {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+ }
+
+ .head {
+   padding: 0;
+ }
+
+ .sixlist a {
+   text-decoration: none;
+   text-align: left;
+   background-color: lightgrey;
+   padding: 16px;
+   border: 5px solid white;
+   color: black;
+   font-size: 1.6rem;
+ }
+
+ .sixlist a:hover {
+   opacity: 0.5;
+ }
+
+.container4 {
+  flex-direction: column;
+  align-items: center;
+}
+
+.left4content, .right4, .rightbottom {
+  display: none;
+}
+
+.left4 {
+  width:100%;
+  padding-right: 0px;
+  padding-top: 0;
+}
+
+.banner4 {
+  border-top: 1px solid lightgrey;
+}
+
+footer nav {
+  display:none;
+}
+
+.containerfooter p {
+  display: block;
+  width: 100%;
+}
+
 }
